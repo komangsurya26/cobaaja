@@ -29,8 +29,14 @@ const main = () => {
     }
     if (optionNum === 2) { 
         
-        getAllUser()
+        const readData = getAllUser()
+        const readDataNum = parseInt(readData)
+
+        if (readDataNum === 2){
+            main()
+        }
       }
+
        
 }
 
