@@ -1,0 +1,15 @@
+{
+  "name": "milky-way",
+  "version": "1.0.0",
+  "description": "CLI apps with file db",
+  "main": "index.js",
+  "scripts": {
+    "start": "/folder/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "komang surya",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
