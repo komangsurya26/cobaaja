@@ -1,5 +1,6 @@
 const fs = require ('fs')
 const path = require ('path')
+const readlinesync = require ('readline-sync')
 
 
 const dataPath = path.join(__dirname, './database/users.json')
@@ -18,11 +19,16 @@ const getAllUser = () => {
       console.log('Tidak ada pengguna yang tersedia')
       return
     }
-  
-    console.log('Daftar pengguna:')
+    console.clear()
+    console.log('Daftar pengguna:\n')
     database.users.forEach((user) => {
-      console.log(`NAMA: ${user.nama}, UMUR: ${user.umur} tahun, ALAMAT: ${user.alamat}`)
+      console.log(`NAMA: ${user.nama}, UMUR: ${user.umur} tahun, ALAMAT: ${user.alamat}\n`)
     })
+
+    const optionKembali = readlinesync.question('\n\nsilahkan tekan 2 untuk kembali ')
+    console.clear()
+
+    return optionKembali
   }
   
   module.exports = { getAllUser}
