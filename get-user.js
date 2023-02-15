@@ -24,8 +24,14 @@ const getAllUser = () => {
     console.log('====================\n')
     console.log('====================\n')
 
-    database.users.forEach((user) => {
-      console.log(`NAMA: ${user.nama}, UMUR: ${user.umur} tahun, ALAMAT: ${user.alamat}\n`)
+    database.users.forEach((users,index) => {
+
+      console.log(`USER NO ${index+1}\n
+      NAMA: ${users.nama}\n
+      UMUR: ${users.umur} tahun\n
+      ALAMAT: ${users.alamat}\n`
+      )
+      
     })
 
     const optionKembali = readlinesync.question('\n\nsilahkan tekan 2 untuk kembali ')

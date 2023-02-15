@@ -6,6 +6,7 @@ const { getAllUser} = require('./get-user')
 
 
 const main = () => {
+    console.clear()
     console.log('=========================')
     console.log('pilih option berikut')
     console.log('   1. create user')
@@ -16,7 +17,7 @@ const main = () => {
     const optionNum = parseInt(option)
 
     if (optionNum >3 || optionNum < 1) {
-        console.log( " pilihanmu tidak ada !")
+        console.log( "\nPILIHANMU SALAH !\n")
     }
 
     if (optionNum === 1) {
