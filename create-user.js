@@ -21,6 +21,8 @@ const createUserDashboard = ()=> {
     const optionKembali = readlinesync.question('tekan 1 untuk kembali ')
     console.clear()
 
+    return optionKembali
+
    
         
     
