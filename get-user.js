@@ -22,6 +22,8 @@ const getAllUser = () => {
     console.clear()
     console.log('Daftar pengguna:\n')
     console.log('====================\n')
+    console.log('====================\n')
+
     database.users.forEach((user) => {
       console.log(`NAMA: ${user.nama}, UMUR: ${user.umur} tahun, ALAMAT: ${user.alamat}\n`)
     })
